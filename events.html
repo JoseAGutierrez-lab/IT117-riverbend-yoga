@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops &amp; Spot Request | Riverbend Yoga Studio</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+  <header>
+    <img src="images/yoga-logo_c.png" alt="Riverbend Yoga Studio logo">
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <h1>Monthly Workshops &amp; Spot Request</h1>
+    <section>
+      <h2>Upcoming Community Workshops</h2>
+      <p>Throughout the year, Riverbend hosts weekend workshops dedicated to specific wellness topics, breathwork practices, and mindful movement techniques.</p>
+      <figure>
+        <img src="images/yoga-workshop_c.png" alt="A diverse group of students sitting cross-legged in a circle on yoga mats during an interactive studio workshop.">
+        <figcaption>Community members practicing mindful connection and guided breathing during our monthly weekend workshop.</figcaption>
+      </figure>
+      <article>
+        <h3>Featured Workshop: Introduction to Mindfulness &amp; Breathwork</h3>
+        <p><strong>Date:</strong> Saturday, November 18 | <strong>Time:</strong> 1:00 PM &ndash; 3:00 PM | <strong>Instructor:</strong> Jane Doe</p>
+        <p>This beginner-friendly, two-hour workshop explores practical breathing techniques designed to calm the nervous system and relieve physical tension. Attendees will learn actionable tools to bring calm into daily work and home routines. No prior yoga experience required.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Request a Spot or Inquire</h2>
+      <p>Class sizes for our special workshops are limited to ensure a personalized, relaxed setting. Please fill out the inquiry form below to reserve your space or ask our team any questions. We will respond within 24 business hours.</p>
+
+      <div id="pref-notice" role="status" aria-live="polite"></div>
+
+      <form action="https://app.sophia.org/spcc/web-dev-foundations-i-v1/touchstone/2" method="post" id="spot-request-form" novalidate>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div>
+            <label for="full-name">Full Name (Required):</label>
+            <input type="text" id="full-name" name="student_name" required minlength="2" maxlength="60" placeholder="e.g., Sarah Johnson" autocomplete="name">
+            <span class="error-message" id="full-name-error" role="alert"></span>
+          </div>
+          <div>
+            <label for="user-email">Email Address (Required):</label>
+            <input type="email" id="user-email" name="student_email" required placeholder="e.g., sarah@example.com" autocomplete="email">
+            <span class="error-message" id="user-email-error" role="alert"></span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Class &amp; Event Preferences</legend>
+          <div>
+            <label for="class-interest">Class or Event of Interest (Required):</label>
+            <input type="text" id="class-interest" name="class_interest" required minlength="3" maxlength="80" placeholder="e.g., Mindfulness &amp; Breathwork Workshop">
+            <span class="error-message" id="class-interest-error" role="alert"></span>
+          </div>
+          <div>
+            <label for="experience-level">Current Experience Level:</label>
+            <select id="experience-level" name="experience_level">
+              <option value="beginner" selected>Beginner (0&ndash;1 year or brand new)</option>
+              <option value="intermediate">Intermediate (1&ndash;3 years regular practice)</option>
+              <option value="advanced">Advanced (3+ years practice)</option>
+              <option value="returning">Returning to practice after hiatus or injury</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Preferred Contact Method</legend>
+          <div>
+            <input type="radio" id="pref-email" name="preferred_contact" value="email" checked>
+            <label for="pref-email">Email response</label>
+          </div>
+          <div>
+            <input type="radio" id="pref-phone" name="preferred_contact" value="phone">
+            <label for="pref-phone">Phone call or SMS text</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Your Message or Special Inquiries</legend>
+          <div>
+            <label for="user-message">Message or Special Accommodations (Required):</label>
+            <textarea id="user-message" name="inquiry_message" rows="5" cols="40" required minlength="10" maxlength="500" placeholder="Tell us about any specific accommodations, physical injuries, or questions you have."></textarea>
+            <span class="error-message" id="user-message-error" role="alert"></span>
+          </div>
+        </fieldset>
+        <button type="submit">Submit Spot Request</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Riverbend Yoga Studio. All Rights Reserved. Dedicated to wellness, mindfulness, and community accessibility.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
